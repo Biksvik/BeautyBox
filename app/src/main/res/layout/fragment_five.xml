@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".mainScreens.course.CourseFragment">
+
+
+    <ImageView
+        android:id="@+id/imageProgressBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/progressbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAppName" />
+
+    <ProgressBar
+        android:id="@+id/progressBarCourse"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="48dp"
+        android:scaleY="4"
+        app:layout_constraintBottom_toBottomOf="@+id/imageProgressBar"
+        app:layout_constraintEnd_toEndOf="@+id/imageProgressBar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageProgressBar" />
+
+    <TextView
+        android:id="@+id/tvAppName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/app_name"
+        android:textColor="@color/app_name_color"
+        android:textSize="25sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvProgressBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:fontFamily="@font/roboto_mono_medium"
+        android:text="@string/tv_progress_bar"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/progressBarCourse"
+        app:layout_constraintEnd_toEndOf="@+id/imageProgressBar"
+        app:layout_constraintStart_toStartOf="@+id/imageProgressBar"
+        app:layout_constraintTop_toTopOf="@+id/imageProgressBar" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewCourse"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageProgressBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:listitem="@layout/item_course_card_view" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

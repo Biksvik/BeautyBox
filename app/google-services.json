@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "590507568704",
+    "firebase_url": "https://beautubox-39a8e-default-rtdb.firebaseio.com",
+    "project_id": "beautubox-39a8e",
+    "storage_bucket": "beautubox-39a8e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:590507568704:android:b0df4dc1ee4c5a1ce4b9a5",
+        "android_client_info": {
+          "package_name": "com.example.beautybox"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "590507568704-4ls7tou5r7iccv6593rm7i4dpqogt4i2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.beautybox",
+            "certificate_hash": "f43e35cc8d587031cbdabe167ad6c490df13df43"
+          }
+        },
+        {
+          "client_id": "590507568704-8asnqghuk7m0u3hk3im1nocjelkkh7su.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkNEkbZGynh-RsDskraIaLEQoKlvRbuEE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "590507568704-8asnqghuk7m0u3hk3im1nocjelkkh7su.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

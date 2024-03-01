@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="25dp"
+    tools:context=".firstLaunch.WaterQuestFragment">
+
+    <ImageView
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:src="@drawable/icon_skin_type"/>
+
+    <TextView
+        android:id="@+id/exp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textSize="22sp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:text="Важно следить за водным балансом"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginHorizontal="15dp"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:text="Вода помогает организму выводить токсины, усваивать питательные вещества, защищать тками от перегрева"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textSize="19sp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:text="Укажите ваш вес, чтобы расчитать дневную норму:"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/simpleSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:dropDownWidth="80dp"
+            tools:listitem="@android:layout/simple_spinner_dropdown_item"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="кг"
+            android:textStyle="italic"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_quest"
+        android:text="@string/next"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:textAllCaps="false"/>
+
+</LinearLayout>

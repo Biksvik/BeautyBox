@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/descriptionAppFragment">
+
+    <fragment
+        android:id="@+id/main_screen_item"
+        android:name="com.example.beautybox.mainScreens.mainScreen.MainScreenFragment"
+        android:label="fragment_main_screen"
+        tools:layout="@layout/fragment_main_screen" >
+        <action
+            android:id="@+id/action_main_screen_item_to_diaryFragment"
+            app:destination="@id/diaryFragment" />
+        <action
+            android:id="@+id/action_main_screen_item_to_calendarFragment"
+            app:destination="@id/calendarFragment" />
+        <argument
+            android:name="user"
+            app:argType="com.example.beautybox.mainScreens.profile.User" />
+        <action
+            android:id="@+id/action_main_screen_item_to_descriptionAppFragment"
+            app:destination="@id/descriptionAppFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/massage_item"
+        android:name="com.example.beautybox.mainScreens.massageScreen.MassageListFragment"
+        android:label="fragment_massage"
+        tools:layout="@layout/fragment_massage_list" >
+        <action
+            android:id="@+id/action_massage_item_to_descriptionMassageFragment"
+            app:destination="@id/descriptionMassageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aricles_item"
+        android:name="com.example.beautybox.mainScreens.articles.ArticlesListFragment"
+        android:label="fragment_four"
+        tools:layout="@layout/fragment_articles_list" >
+        <action
+            android:id="@+id/action_aricles_item_to_articleFragment"
+            app:destination="@id/articleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/five"
+        android:name="com.example.beautybox.mainScreens.course.CourseFragment"
+        android:label="fragment_five"
+        tools:layout="@layout/fragment_five" >
+        <action
+            android:id="@+id/action_five_to_descriptionMassageFragment"
+            app:destination="@id/descriptionMassageFragment" />
+        <action
+            android:id="@+id/action_five_to_descriptionMassageFromCourseFragment"
+            app:destination="@id/descriptionMassageFromCourseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profile_item"
+        android:name="com.example.beautybox.mainScreens.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profile_item_to_userDataProfileFragment"
+            app:destination="@id/userDataProfileFragment" />
+        <action
+            android:id="@+id/action_profile_item_to_loadingFragment"
+            app:destination="@id/loadingFragment" />
+        <action
+            android:id="@+id/action_profile_item_to_motivationFragment"
+            app:destination="@id/motivationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/diaryFragment"
+        android:name="com.example.beautybox.mainScreens.mainScreen.diary.DiaryFragment"
+        android:label="fragment_diary"
+        tools:layout="@layout/fragment_diary" >
+        <action
+            android:id="@+id/action_diaryFragment_to_main_screen_item"
+            app:destination="@id/main_screen_item" />
+    </fragment>
+    <fragment
+        android:id="@+id/calendarFragment"
+        android:name="com.example.beautybox.mainScreens.mainScreen.calendar.CalendarFragment"
+        android:label="fragment_calendar"
+        tools:layout="@layout/fragment_calendar" />
+    <fragment
+        android:id="@+id/descriptionAppFragment"
+        android:name="com.example.beautybox.firstLaunch.DescriptionAppFragment"
+        android:label="fragment_descriptiion_app"
+        tools:layout="@layout/fragment_descriptiion_app" >
+        <action
+            android:id="@+id/action_descriptionAppFragment_to_authFragment"
+            app:destination="@id/authFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/authFragment"
+        android:name="com.example.beautybox.firstLaunch.AuthFragment"
+        android:label="auth_fragment"
+        tools:layout="@layout/fragment_auth" >
+        <action
+            android:id="@+id/action_authFragment_to_loadingFragment"
+            app:destination="@id/loadingFragment" />
+        <action
+            android:id="@+id/action_authFragment_to_main_screen_item"
+            app:destination="@id/main_screen_item" />
+    </fragment>
+    <fragment
+        android:id="@+id/articleFragment"
+        android:name="com.example.beautybox.mainScreens.articles.ArticleFragment"
+        android:label="fragment_article"
+        tools:layout="@layout/fragment_article">
+        <argument
+            android:name="currentArticle"
+            app:argType="com.example.beautybox.mainScreens.articles.Article" />
+    </fragment>
+    <fragment
+        android:id="@+id/descriptionMassageFragment"
+        android:name="com.example.beautybox.mainScreens.massageScreen.DescriptionMassageFragment"
+        android:label="fragment_description_massage"
+        tools:layout="@layout/fragment_description_massage" >
+        <argument
+            android:name="currentMassage"
+            app:argType="com.example.beautybox.mainScreens.massageScreen.Massage" />
+        <action
+            android:id="@+id/action_descriptionMassageFragment_to_preparationForMassageFragment"
+            app:destination="@id/preparationForMassageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/preparationForMassageFragment"
+        android:name="com.example.beautybox.mainScreens.massageScreen.PreparationForMassageFragment"
+        android:label="fragment_preparation_for_massage"
+        tools:layout="@layout/fragment_preparation_for_massage" >
+        <action
+            android:id="@+id/action_preparationForMassageFragment_to_massageFragment"
+            app:destination="@id/massageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userDataProfileFragment"
+        android:name="com.example.beautybox.mainScreens.profile.UserDataProfileFragment"
+        android:label="fragment_user_data_profile"
+        tools:layout="@layout/fragment_user_data_profile" />
+    <fragment
+        android:id="@+id/massageFragment"
+        android:name="com.example.beautybox.mainScreens.massageScreen.MassageFragment"
+        android:label="fragment_massage"
+        tools:layout="@layout/fragment_massage" >
+        <action
+            android:id="@+id/action_massageFragment_to_massage_item"
+            app:destination="@id/massage_item" />
+        <action
+            android:id="@+id/action_massageFragment_to_endMassageFragment"
+            app:destination="@id/endMassageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loadingFragment"
+        android:name="com.example.beautybox.firstLaunch.LoadingFragment"
+        android:label="fragment_loading"
+        tools:layout="@layout/fragment_loading" >
+        <action
+            android:id="@+id/action_loadingFragment_to_completeQuestFragment"
+            app:destination="@id/completeQuestFragment" />
+        <action
+            android:id="@+id/action_loadingFragment_to_profile_item"
+            app:destination="@id/profile_item" />
+    </fragment>
+    <fragment
+        android:id="@+id/completeQuestFragment"
+        android:name="com.example.beautybox.firstLaunch.CompleteQuestFragment"
+        android:label="fragment_complete_quest"
+        tools:layout="@layout/fragment_complete_quest" >
+        <action
+            android:id="@+id/action_completeQuestFragment_to_genderQuestFragment"
+            app:destination="@id/genderQuestFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/genderQuestFragment"
+        android:name="com.example.beautybox.firstLaunch.GenderQuestFragment"
+        android:label="fragment_gender_quest"
+        tools:layout="@layout/fragment_gender_quest" >
+        <action
+            android:id="@+id/action_genderQuestFragment_to_skinTypeFragment"
+            app:destination="@id/skinTypeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/skinTypeFragment"
+        android:name="com.example.beautybox.firstLaunch.SkinTypeFragment"
+        android:label="fragment_skin_type"
+        tools:layout="@layout/fragment_skin_type" >
+        <action
+            android:id="@+id/action_skinTypeFragment_to_waterQuestFragment"
+            app:destination="@id/waterQuestFragment" />
+        <argument
+            android:name="user"
+            app:argType="com.example.beautybox.mainScreens.profile.User" />
+    </fragment>
+    <fragment
+        android:id="@+id/dailyNormWaterFragment"
+        android:name="com.example.beautybox.firstLaunch.DailyNormWaterFragment"
+        android:label="fragment_daily_norm_water"
+        tools:layout="@layout/fragment_daily_norm_water" >
+        <action
+            android:id="@+id/action_dailyNormWaterFragment_to_lastQuestFragment"
+            app:destination="@id/lastQuestFragment" />
+        <argument
+            android:name="user"
+            app:argType="com.example.beautybox.mainScreens.profile.User" />
+    </fragment>
+    <fragment
+        android:id="@+id/waterQuestFragment"
+        android:name="com.example.beautybox.firstLaunch.WaterQuestFragment"
+        android:label="fragment_water_quest"
+        tools:layout="@layout/fragment_water_quest" >
+        <action
+            android:id="@+id/action_waterQuestFragment_to_physicalActivityFragment"
+            app:destination="@id/physicalActivityFragment" />
+        <argument
+            android:name="user"
+            app:argType="com.example.beautybox.mainScreens.profile.User" />
+    </fragment>
+    <fragment
+        android:id="@+id/physicalActivityFragment"
+        android:name="com.example.beautybox.firstLaunch.PhysicalActivityFragment"
+        android:label="fragment_physical_activity"
+        tools:layout="@layout/fragment_physical_activity" >
+        <action
+            android:id="@+id/action_physicalActivityFragment_to_dailyNormWaterFragment"
+            app:destination="@id/dailyNormWaterFragment" />
+        <argument
+            android:name="user"
+            app:argType="com.example.beautybox.mainScreens.profile.User" />
+    </fragment>
+    <fragment
+        android:id="@+id/lastQuestFragment"
+        android:name="com.example.beautybox.firstLaunch.LastQuestFragment"
+        android:label="fragment_last_quest"
+        tools:layout="@layout/fragment_last_quest" >
+        <action
+            android:id="@+id/action_lastQuestFragment_to_main_screen_item"
+            app:destination="@id/main_screen_item" />
+        <argument
+            android:name="user"
+            app:argType="com.example.beautybox.mainScreens.profile.User" />
+    </fragment>
+    <fragment
+        android:id="@+id/endMassageFragment"
+        android:name="com.example.beautybox.mainScreens.massageScreen.EndMassageFragment"
+        android:label="fragment_end_massage"
+        tools:layout="@layout/fragment_end_massage" >
+        <action
+            android:id="@+id/action_endMassageFragment_to_massage_item"
+            app:destination="@id/massage_item" />
+        <action
+            android:id="@+id/action_endMassageFragment_to_five"
+            app:destination="@id/five" />
+    </fragment>
+    <fragment
+        android:id="@+id/descriptionMassageFromCourseFragment"
+        android:name="com.example.beautybox.mainScreens.course.DescriptionMassageFromCourseFragment"
+        android:label="fragment_description_massage_from_course"
+        tools:layout="@layout/fragment_description_massage_from_course" >
+        <action
+            android:id="@+id/action_descriptionMassageFromCourseFragment_to_preparationForMassageFragment"
+            app:destination="@id/preparationForMassageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/motivationFragment"
+        android:name="com.example.beautybox.mainScreens.profile.MotivationFragment"
+        android:label="fragment_motivation"
+        tools:layout="@layout/fragment_motivation" />
+</navigation>

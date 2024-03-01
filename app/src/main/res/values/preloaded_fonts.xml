@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/aclonica</item>
+        <item>@font/adamina</item>
+        <item>@font/anonymous_pro_bold</item>
+        <item>@font/cagliostro</item>
+        <item>@font/caudex_bold</item>
+        <item>@font/kanit_medium</item>
+        <item>@font/kanit_thin</item>
+        <item>@font/prompt_medium</item>
+        <item>@font/revalia</item>
+        <item>@font/roboto_mono</item>
+        <item>@font/roboto_mono_medium</item>
+        <item>@font/roboto_slab_bold</item>
+    </array>
+</resources>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".firstLaunch.GenderQuestFragment"
+    android:gravity="center"
+    android:padding="25dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:src="@drawable/free_icon_gender_2545910"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/questionGender"
+        android:layout_marginTop="20dp"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnWoman"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="12dp"
+        android:background="@drawable/btn_quest"
+        android:text="@string/woman_answer"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textAllCaps="false"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnMan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_quest"
+        android:text="@string/man_answer"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:padding="12dp"
+        android:textAllCaps="false"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnNoAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_quest"
+        android:text="@string/no_answer"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:padding="12dp"
+        android:textAllCaps="false"/>
+
+</LinearLayout>

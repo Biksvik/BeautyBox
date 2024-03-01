@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="background">#97FED6C9</color>
+    <color name="text_profile">#AF3800</color>
+    <color name="button_background">#ECECEC</color>
+    <color name="pale_dogwood">#FED6C9</color>
+    <color name="app_name_color">#ADE91E63</color>
+    <color name="turquoise">#99F0EE</color>
+    <color name="blue">#102180</color>
+    />
+
+
+</resources>

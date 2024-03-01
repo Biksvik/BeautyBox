@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">BeautyBox</string>
+    <string name="image_content_descr">Картинка</string>
+    <!-- Первый запуск и регистрация -->
+    <string name="hello_text">Давайте вместе позаботимся о красоте и здоровье вашей кожи!</string>
+
+    <!-- Анкета -->
+    <string name="questionGender">Выберите свой пол</string>
+    <string name="man_answer">Мужской</string>
+    <string name="woman_answer">Женский</string>
+    <string name="no_answer">Не хочу отвечать</string>
+    <string name="next">Продолжить</string>
+    <!--меню-->
+    <string name="main_screen_item">Для тебя</string>
+    <string name="massage_item">Упражнения</string>
+    <string name="four">Советы</string>
+    <string name="five">Курс</string>
+    <string name="profile_item">Профиль</string>
+    <!--Профиль-->
+    <string name="name_in_profile">Панькова Алина</string>
+    <string name="email_profile">panalin@gamail.com</string>
+    <string name="my_data">Мои данные</string>
+    <string name="water">Потребление воды</string>
+    <string name="notifications">Уведомления</string>
+    <string name="exit">Выйти из аккаунта</string>
+    <!--Курс-->
+    <string name="tv_progress_bar">Здесь будет отображаться ваш прогресс</string>
+    <string name="diary_text_main_screen">Заполни дневник красоты</string>
+    <string name="move_up">Move Up</string>
+    <string name="move_down">Move down</string>
+    <string name="remove">Remove</string>
+    <!--Главный экран-->
+    <string name="calendar_btn">Календарь</string>
+    <string name="diary_text">Заполни\nдневник\nкрасоты!</string>
+    <!--Статьи-->
+    <string name="recommendations">Советы</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="next_dalee">Далее</string>
+    <string name="sign_in">Авторизация</string>
+    <string name="sign_in_later">Пропустить</string>
+    <string name="sign_in_text">Войдите с помощью электронной почты:</string>
+    <string name="loading_text_sign_in">Загрузка...</string>
+
+
+</resources>

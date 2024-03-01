@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    tools:context=".firstLaunch.LastQuestFragment">
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/icon_facial_mask"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="В уходе за кожей важно совмещать косметолога и домашний уход"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Для красоты и здоровья кожи мало только посещать косметолога. Главную роль играет регулярный домашний уход"
+        android:textAlignment="center"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="15dp"
+        android:textSize="18sp"
+        android:textStyle="italic"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Всего 10-15 минут в день такой рутины приведут вас красивой и здоровой коже"
+        android:textAlignment="center"
+        android:layout_margin="15dp"
+        android:textSize="18sp"
+        android:textStyle="italic"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_quest"
+        android:padding="10dp"
+        android:text="Начать!"
+        android:textColor="@color/white"
+        android:layout_marginHorizontal="20dp"
+        android:textSize="20sp"
+        android:textAllCaps="false"/>
+
+</LinearLayout>
